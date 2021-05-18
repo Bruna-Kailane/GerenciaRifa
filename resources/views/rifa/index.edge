@@ -1,6 +1,20 @@
 @layout('layout/app')
 
 @section('content')
-<h1>BEM VINDO - Aplicação para Gerência de Rifas Online</h1>
-<a href="/about">Sobre</a>
+<h1>BEM VINDO {{ route('auth.login') }}</h1>
+
+<div>
+    <h4>Suas Rifas:</h4>
+        <ul>
+            <li><p>rifa1</p></li>
+        </ul>
+</div>
+
+<div>
+    <h4>Rifas que você está participando:</h4>
+        <ul>
+            <li><p>rifa1</p></li>
+        </ul>
+</div>
+
 @endsection
